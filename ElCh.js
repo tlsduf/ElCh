@@ -2,8 +2,7 @@
 // custom Func
 
 // 임시
-let aa = document.getElementById("aa");
-aa.addEventListener("click", function(){
+document.getElementById("click1").addEventListener("click", function(){
     console.log("OnClicked");
     InfoShowOn();
 },false)
@@ -15,9 +14,9 @@ function UpdateInfo(){
 // 충전소 정보 인터페이스 스윕
 function InfoShowOn(){
     console.log("InfoShowOff");
-    document.getElementById("info").style.width = "40vw";
+    document.getElementById("info").style.width = "38vw";
     // document.getElementById("info").style.border = "0.5vw solid blueviolet";
-    document.getElementById("map").style.width = "60vw";
+    document.getElementById("map").style.width = "62vw";
 }
 function InfoShowOff(){
     console.log("InfoShowOn");
