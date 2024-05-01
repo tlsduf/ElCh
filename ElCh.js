@@ -16,11 +16,13 @@ function UpdateInfo(){
 function InfoShowOn(){
     console.log("InfoShowOff");
     document.getElementById("info").style.width = "40vw";
+    // document.getElementById("info").style.border = "0.5vw solid blueviolet";
     document.getElementById("map").style.width = "60vw";
 }
 function InfoShowOff(){
     console.log("InfoShowOn");
     document.getElementById("info").style.width = "0vw";
+    // document.getElementById("info").style.border = "";
     document.getElementById("map").style.width = "100vw";
 }
 // 충전소 정보 인터페이스 닫기 이벤트
