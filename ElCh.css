@@ -80,68 +80,79 @@ a {
     width: 0vw;
     height: 100vh;
     overflow: hidden;
+    align-content: space-around;
 
     background-color: white;
     box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray;
 }
 #charger_info {
-    width: 95%;
-    height: 25.5vh;
+    width: 90%;
+    height: 55%;
     margin: auto;
+
+    /* box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray; */
 }
 #review {
-    width: 95%;
-    height: 70%;
+    width: 90%;
+    height: 35%;
     margin: auto;
+
+    /* box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray; */
 }
 
 #charger_name {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 30%;
 }
 #name {
     width: 100%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     align-content: center;
 }
 #close {
-    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 4vw;
-    height: 100%;
+    width: auto;
+    height: 7.65vh;
+    font-size: 3.7vh;
+    text-wrap: nowrap;
+    align-content: center;
+    border-radius: 10%;
+    border: 0.01vw solid black;
 }
 #close:hover {cursor: pointer;}
 #charger_name_2 {
     height: 70%;
-    display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 #slow {
-    width: 45%;
-    height: 90%;
+    width: 70%;
+    height: 40%;
     position: relative;
     top: 5%;
+    left: 10%;
     font-size: 1.7vw;
     align-content: center;
 }
 #fast {
-    width: 45%;
-    height: 90%;
+    width: 70%;
+    height: 40%;
     position: relative;
     top: 5%;
+    left: 10%;
     font-size: 1.7vw;
     align-content: center;
 }
 
 #review_name {
-    height: 15%;
-
+    height: 35%;
     font-size: 2vw;
 }
+#review_name div {
+    height: 100%;
+    align-content: center;
+}
 #review_content {
-    height: 85%;
+    height: 65%;
 
     font-size: 1.2vw;
 }
