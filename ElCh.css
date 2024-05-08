@@ -1,51 +1,11 @@
-*{
-    padding:0 ;
-    margin: 0;
-    box-sizing: border-box;
-
+*{  padding:0 ;margin: 0;box-sizing: border-box;
     /* border: 0.01vw solid black; */
 }
-a {
-    text-decoration: none;
-}
-
+a {text-decoration: none;}
 
 
 /* 상단바 */
-/* #upper_box{
-    width: 100vw;
-    height: 15vh;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0vw -0.5vw 1vw -0.1vw inset grey;
-}
-#upper_box ul{
-    width: 100%;
-    height: 14vh;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-#upper_box ul li {
-    width: 11vw;
-    height: 14vh;
-
-    text-align: center;
-}
-.dp1 div {
-    height: 100%;
-    align-content: center;
-}
-.dp1 div a{
-    font-size: 2.5vw;
-    color: black;
-}
-.dp1:hover a {
-    font-size: 2.3vw;
-    font-weight: bold;
-} */
-
-#category {position:absolute;top:10px;left:10px;border-radius: 5px; border:1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);background: #fff;overflow: hidden;z-index: 2;}
+#category {position:absolute;top:10px;left:0.5vw;border-radius: 5px; border:1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);background: #fff;overflow: hidden;z-index: 2;}
 #category li {float:left;list-style: none;width:10vw; height:15vh; border-right:1px solid #acacac;padding:6px 0;text-align: center; cursor: pointer; font-size: 1.6vw;}
 #category li.on {background: #eee;}
 #category li:hover {background: #ffe6e6;border-left:1px solid #acacac;margin-left: -1px;}
@@ -60,70 +20,33 @@ a {
 #category li .store {background-position: -10px -180px;}
 #category li.on .category_bg {background-position-x:-46px;}
 
-
+/* 업데이트 타임 보드 */
+#update_time { float:left; width:8vw; height:6vh; position:absolute; top:10px; left:51vw;border-radius: 5px; border:1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);background: #fff;overflow: hidden;z-index: 2; text-align: center; font-size: 1vw;}
 
 /* info , map */
-#container {
-    display: flex;
-}
-
+#container {display: flex;}
 
 /* map */
-#map {
-    width: 100vw;
-    height: 100vh;
-}
-
+#map {width: 100vw; height: 100vh;}
 
 /* info */
-#info {
-    width: 0vw;
-    height: 100vh;
-    overflow: hidden;
-    align-content: space-around;
-
-    background-color: white;
-    box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray;
+#info { width: 0vw; height: 100vh; overflow: hidden; align-content: space-around;
+    background-color: white; box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray;}
+#charger_info {width: 90%; height: 55%; margin: auto;
+    /* box-shadow: 1vw 1vw 1vw 0.1vw    gray; */
 }
-#charger_info {
-    width: 90%;
-    height: 55%;
-    margin: auto;
-
-    /* box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray; */
-}
-#review {
-    width: 90%;
-    height: 35%;
-    margin: auto;
-
+#review { width: 90%; height: 35%; margin: auto;
     /* box-shadow: 0.5vw 0vw 1vw -0.1vw inset gray; */
 }
 
-#charger_name {
-    display: flex;
-    width: 100%;
-    height: 30%;
-}
-#name {
-    width: 100%;
-    font-size: 2.5vw;
-    align-content: center;
-}
-#close {
-    width: auto;
-    height: 7.65vh;
-    font-size: 3.7vh;
-    text-wrap: nowrap;
-    align-content: center;
-    border-radius: 10%;
-    border: 0.01vw solid black;
-}
+#charger_name { display: flex; width: 100%; height: 30%; border-radius: 2%; border: 1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);}
+#name { position:relative; left:3%; width: 100%; font-size: 2.5vw; align-content: center;}
+#name :nth-child(2) { position:relative; left:3%; font-size: 1.2vw; }
+#close { width: auto; align-content: center; position: relative; left:-5%;}
+#close_inner { width: 7.65vh; height: 7.65vh; font-size: 2.7vh; text-wrap: nowrap; text-align:center;align-content: center; border-radius: 20%; border: 1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);}
 #close:hover {cursor: pointer;}
-#charger_name_2 {
-    height: 70%;
-    /* justify-content: space-evenly; */
-}
+#charger_name_2 { height: 70%; border-radius: 2%; border: 1px solid #909090;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);}
+
 #slow {
     width: 70%;
     height: 40%;
@@ -133,6 +56,8 @@ a {
     font-size: 1.7vw;
     align-content: center;
 }
+#slow div {position: relative; left: -10%;}
+#slow div a {position:absolute; top:20%;}
 #fast {
     width: 70%;
     height: 40%;
@@ -142,20 +67,12 @@ a {
     font-size: 1.7vw;
     align-content: center;
 }
+#fast div {position: relative; left: -10%;}
+#fast div a {position:absolute; top:20%;}
 
-#review_name {
-    height: 35%;
-    font-size: 2vw;
-}
-#review_name div {
-    height: 100%;
-    align-content: center;
-}
-#review_content {
-    height: 65%;
-
-    font-size: 1.2vw;
-}
+#review_name { height: 35%; font-size: 2vw;}
+#review_name div {  height: 100%; align-content: center; }
+#review_content { height: 65%; font-size: 1.2vw; }
 
 
 

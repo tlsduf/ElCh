@@ -8,45 +8,10 @@
     <link rel="stylesheet" href="ElCh.css" />
 </head>
 <body>
-    <!-- <div id = "upper_box">
-        <ul>
-            <li class="dp1">
-                <div>
-                    <a id = "aa" href="#none">다시검색</a>
-                </div>
-            </li>
-            <li class="dp1">
-                <div>
-                    <a id = "aa" href="#none">거리우선</a>
-                </div>
-            </li>
-            <li class="dp1">
-                <div>
-                    <a id = "aa" href="#none">빈칸우선</a>
-                </div>
-            </li>
-            <li class="dp1">
-                <div>
-                    <a id = "aa" href="#none">가격우선</a>
-                </div>
-            </li>
-            <li class="dp1">
-                <div>
-                    <a id = "aa" href="#none">고속우선</a>
-                </div>
-            </li>
-            <li>
-
-            </li>
-            <li>
-                
-            </li>
-          </ul>
-    </div> -->
     <div id = "container">
         <ul id="category">
             <li id="click1" data-order="0"> 
-                <span class="category_bg bank"></span>
+                <span class="category_bg cafe"></span>
                 다시<br>검색
             </li>       
             <li id="click2" data-order="1"> 
@@ -55,32 +20,38 @@
             </li>  
             <li id="click3" data-order="2"> 
                 <span class="category_bg pharmacy"></span>
-                빈칸<br>우선
+                빈칸<br>우선        
             </li>  
             <li id="click4" data-order="3"> 
-                <span class="category_bg oil"></span>
+                <span class="category_bg bank"></span>
                 가격<br>우선
             </li>  
             <li id="click5" data-order="4"> 
-                <span class="category_bg cafe"></span>
+                <span class="category_bg oil"></span>
                 고속<br>우선
             </li>      
         </ul>
+        <div id = "update_time">상태 갱신 까지<br><span>10</span>/초</div>
         <div id = "map"></div>
         <div id = "info">
             <div id = "charger_info">
                 <div id = "charger_name">
                     <div id = "name">
-                        <a> 충전소 이름 OOOOO</a>
+                        <div><a> 충전소 이름 OOOOO</a></div>
+                        <div><a>충전소 부수정보 OOOOO</a></div>
                     </div>
-                    <div id = "close">닫기</div>
+                    <div id = "close">
+                        <div id = "close_inner">닫기</div>
+                    </div>
                 </div>
                 <div id = "charger_name_2">
                     <div id = "slow">
-                        <a> 일반 충전기   4/6 사용중 </a>
+                        <div><img src="img/slow.png" width="20%"><a>일반 충전기</a></div>
+                        <a>4/6 사용중 </a>
                     </div>
                     <div id = "fast">
-                        <a> 고속 충전기   2/6 사용중 </a>
+                        <div><img src="img/fast.png" width="20%"><a>고속 충전기</a></div>
+                        <a>2/6 사용중 </a>
                     </div>
                 </div>
             </div>
